@@ -136,7 +136,7 @@ const DashHeader = () => {
 
                         {
                             (isLoading) 
-                                ? <PulseLoader color={"#FFF"} />
+                                ? <p>Loading...</p>
                                 : (
                                     <>
                                         {newnotebtn}

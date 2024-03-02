@@ -1,4 +1,3 @@
-import {selectAllUsers} from '../users/usersApiSlice';
 import NewNoteForm from './NewNoteForm'
 import { useGetUsersQuery } from '../users/usersApiSlice';
 import { PulseLoader } from 'react-spinners/PulseLoader';
@@ -16,7 +15,7 @@ const NewNote = () => {
     })
 
     if(!users)
-        <PulseLoader  color={"#FFF"} />
+    <p>Loading...</p>
         
     const content =  <NewNoteForm users={users} />
 

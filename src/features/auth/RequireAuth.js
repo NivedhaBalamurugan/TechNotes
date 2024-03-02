@@ -13,7 +13,7 @@ const RequireAuth = ({ allowedRoles }) => {
 
     return (
         <>
-            console.log("coming")
+           
             {content}
         </>
     )

@@ -16,7 +16,7 @@ const EditUser = () => {
             })
 
         if(!user)
-               return <PulseLoader color={"#FFF"} />
+               return <p>Loading...</p>
         
 
         const content = <EditUserForm user={user} /> 

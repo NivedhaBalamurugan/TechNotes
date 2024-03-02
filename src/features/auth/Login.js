@@ -40,6 +40,7 @@ const Login = () => {
             dispatch(setCredentials({ accessToken }))
             setUsername('')
             setPassword('')
+            console.log("sujccess");
             navigate('/dash')
         } catch (err) {
             if (!err.status) {
@@ -61,7 +62,7 @@ const Login = () => {
 
     const errClass = errMsg ? "errmsg" : "offscreen"
 
-    if (isLoading) return <PulseLoader color={"#FFF"} />
+    if (isLoading) return <p>Loading...</p> 
     const content = (
         <section className="public">
             <header>

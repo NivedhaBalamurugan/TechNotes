@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-import { useSelector } from "react-redux";
 import EditNoteForm from './EditNoteForm'
 import { useGetNotesQuery } from "./notesApiSlice";
 import { useGetUsersQuery } from "../users/usersApiSlice";
@@ -32,7 +31,7 @@ const EditNote = () => {
         // to prevent this
 
         if(!note || !users.length) 
-                return <PulseLoader color={"#FFF"} />
+                return <p>Loading...</p>
 
         if(!isManager && !isAdmin){
                 if(note.username !== username)

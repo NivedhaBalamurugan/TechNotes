@@ -10,7 +10,7 @@ export const store = configureStore({
     },
     middleware: GetDefaultMiddleware =>
         GetDefaultMiddleware().concat(apiSlice.middleware),
-    devTools: false  //false only if deplyoed
+    devTools: true  //false only if deplyoed
 }) 
 
 
